@@ -20,6 +20,6 @@ venv-win/
 .DS_Store
 Thumbs.db
 
-# Logs and databases
+# Logs and databases.
 *.log
 data/
