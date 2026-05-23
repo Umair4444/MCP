@@ -1,0 +1,25 @@
+# Environment files (Security)
+.env
+.env.local
+.env.*.local
+
+# Python environment and cache
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+venv-win/
+
+# IDE/Editor files
+.vscode/
+.idea/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Logs and databases
+*.log
+data/
