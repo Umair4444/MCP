@@ -1,0 +1,39 @@
+{
+  "shop": "MegaStore",
+  "categories": [
+    {
+      "id": "electronics",
+      "name": "Electronics"
+    },
+    {
+      "id": "fashion",
+      "name": "Fashion"
+    }
+  ],
+  "products": [
+    {
+      "id": "P1001",
+      "name": "iPhone 16",
+      "category": "electronics",
+      "price": 999,
+      "discount": 10,
+      "in_stock": true
+    },
+    {
+      "id": "P1002",
+      "name": "Samsung Galaxy S26",
+      "category": "electronics",
+      "price": 899,
+      "discount": 5,
+      "in_stock": true
+    },
+    {
+      "id": "P2001",
+      "name": "Men's Casual Shirt",
+      "category": "fashion",
+      "price": 39,
+      "discount": 15,
+      "in_stock": false
+    }
+  ]
+}

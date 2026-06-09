@@ -1,0 +1,35 @@
+{
+  "store": {
+    "name": "TechMart",
+    "currency": "USD",
+    "products": [
+      {
+        "id": 1,
+        "name": "Wireless Mouse",
+        "category": "Accessories",
+        "price": 29.99,
+        "stock": 120,
+        "brand": "LogiTech",
+        "rating": 4.5
+      },
+      {
+        "id": 2,
+        "name": "Mechanical Keyboard",
+        "category": "Accessories",
+        "price": 89.99,
+        "stock": 45,
+        "brand": "KeyPro",
+        "rating": 4.8
+      },
+      {
+        "id": 3,
+        "name": "27-inch Monitor",
+        "category": "Displays",
+        "price": 249.99,
+        "stock": 20,
+        "brand": "ViewMax",
+        "rating": 4.7
+      }
+    ]
+  }
+}
