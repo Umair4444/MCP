@@ -1,10 +1,3 @@
-# def main():
-#     print("Hello from MCP-Client!")
-
-
-# if __name__ == "__main__":
-#     main()
-
 import asyncio
 from fastmcp import Client
 from rich import print

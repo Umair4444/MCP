@@ -13,37 +13,29 @@ async def main():
         for tool in tools:
             print(f"  - {tool.name}: {tool.description}")
 
+        print("\n ******************************** \n")
+
         # tools/call - Call the 'add' tool
         result = await client.call_tool("add", {"a": 5, "b": 3})
         print(f"add(5, 3) = {result}")
+
+        print("\n ******************************** \n")
 
         # tools/call - Call the 'get_weather' tool
         result = await client.call_tool("get_weather", {"city": "Karachi"})
         print(f"get_weather('Karachi') = {result}")
 
-if __name__ == "__main__":
-    asyncio.run(main())
+        print("\n ******************************** \n")
 
-
-
-
-
-
-
-
-
-
-
-async def main():
-    client = Client("http://localhost:8000/sse")
-
-    async with client:
         get_all_tools = await client.list_tools()
         print("Available Tools:", get_all_tools)
         return get_all_tools
-    
+
 if __name__ == "__main__":
     asyncio.run(main())
+
+
+
 
 
 
