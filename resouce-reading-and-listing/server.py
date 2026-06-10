@@ -21,11 +21,13 @@ def payment_info():
 
 @mcp.resource("docs://products/techmart")
 def techmart_products():
+        # json data to python dict
     with open("shopping_data/techmark.json", "r") as file:
         return json.load(file)
     
 @mcp.resource("docs://products/megamart")
 def megamart_products():
+    # json data to python dict
     with open("shopping_data/megastore.json", "r") as file:
         return json.load(file)
 
