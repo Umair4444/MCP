@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The 10-80-10 Rule - Preview</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #f3f2ef; display: flex; justify-content: center; padding: 20px; color: #191919; }
+        .container { width: 100%; max-width: 600px; background: white; border: 1px solid #dcdcdc; border-radius: 8px; padding: 16px; box-shadow: 0 0 0 1px rgba(0,0,0,.15); }
+        .header { display: flex; align-items: center; margin-bottom: 12px; }
+        .avatar { width: 48px; height: 48px; border-radius: 50%; background-color: #ccc; margin-right: 12px; }
+        .author-info { display: flex; flex-direction: column; }
+        .author-name { font-weight: 600; font-size: 16px; }
+        .author-headline { font-size: 14px; color: #666; }
+        .post-text { margin-bottom: 16px; white-space: pre-line; font-size: 15px; line-height: 1.5; }
+        .carousel { position: relative; width: 100%; border: 1px solid #eee; border-radius: 4px; overflow: hidden; }
+        .carousel img { width: 100%; display: none; }
+        .carousel img.active { display: block; }
+        .controls { display: flex; justify-content: space-between; margin-top: 10px; }
+        button { padding: 8px 16px; cursor: pointer; border: none; background: #e0e0e0; border-radius: 4px; }
+        .actions { border-top: 1px solid #e0e0e0; margin-top: 16px; padding-top: 12px; display: flex; justify-content: space-around; }
+        .action-btn { background: none; border: none; font-weight: 600; color: #666; cursor: pointer; display: flex; align-items: center; gap: 5px; }
+        .action-btn svg { fill: #666; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="avatar"></div>
+            <div class="author-info">
+                <span class="author-name">User Name</span>
+                <span class="author-headline">Author Headline/Job Title</span>
+            </div>
+        </div>
+        <div class="post-text">The 10-80-10 Rule: Operating Rhythm of the AI Workforce
+
+Steve Jobs famously followed what is known as the 10-80-10 rule: spend 10% of your time setting the vision, let your team execute for 80%, then return for the final 10% to polish and perfect. Tech entrepreneur Dan Martell breaks it down as 10% ideation, 80% execution, and 10% refinement and integration. Jobs evolved from a micromanager who personally dictated every pixel of the Mac's calculator to a leader who trusted talented people with the middle 80% — and Apple became the most valuable company on Earth because of that shift.
+
+Now replace "talented people" with "AI employees," and you have the operating rhythm of the Agent Factory:
+
+Phase | Jobs's Apple | The Agent Factory
+First 10% — Intent | Jobs sets the vision and constraints | Human defines the spec: goals, constraints, budget, permissions
+Middle 80% — Execution | Apple's teams build the product | AI Workers execute: compose tools, spawn sub-agents, deliver outcomes
+Final 10% — Verification | Jobs polishes and says "ship it" | Human reviews, refines, and approves the verified outcome
+
+As of February 2026, Cursor reports that 35% of the pull requests merged into its own product are produced by autonomous agents running on cloud VMs — agents the company's developers direct by defining problems and reviewing artifacts rather than guiding line by line. Cursor's CEO Michael Truell projects the vast majority of development work will look this way within a year. The 10-80-10 rhythm is no longer a prediction. It is a measurement of where the frontier already operates.
+
+The verification surface itself is changing. In the synchronous-agent era, humans reviewed diffs in a code editor. In the cloud-agent era now arriving, agents work for hours on dedicated VMs and return artifacts that are quickly reviewable — logs, video recordings, and live previews — rather than line-level changes. This is what makes parallel work practical: a human cannot read twelve diffs at once, but they can scan twelve previews. The final 10% of the rhythm is being redesigned around the artifact, not the diff.
+
+This is not a coincidence. The pattern works because it allocates human attention where it is irreplaceable — at the boundaries — while letting execution scale without bottlenecks. The first 10% is where critical thinking, context setting, and clear prompting matter. The middle 80% is the heavy lifting — summarizing, generating, analyzing, formatting. The final 10% is where human expertise shapes the output into something sharp, usable, and high-quality.
+
+The Agent Factory thesis already states: "Humans define intent. Agents execute. Humans verify outcomes." The 10-80-10 rule is the quantified version of that sentence. It tells every professional exactly how their day changes: you stop spending 80% of your time on execution and start spending 100% of your attention on the 20% that only a human can do — setting direction and guaranteeing quality.
+
+The leaders who internalize this shift won't just manage AI employees. They'll manage them the way Jobs managed Apple's best teams: with a clear spec at the start, trust in the middle, and uncompromising standards at the end.
+
+How are you shifting your operating rhythm to accommodate AI agents?
+
+#AI #AgentFactory #Leadership #Productivity #DigitalTransformation</div>
+        <div class="carousel">
+            <img src="slide-1.jpg" class="active" alt="Slide 1">
+            <img src="slide-2.jpg" alt="Slide 2">
+            <img src="slide-3.jpg" alt="Slide 3">
+            <img src="slide-4.jpg" alt="Slide 4">
+            <img src="slide-5.jpg" alt="Slide 5">
+            <img src="slide-6.jpg" alt="Slide 6">
+            <img src="slide-7.jpg" alt="Slide 7">
+            <img src="slide-8.jpg" alt="Slide 8">
+        </div>
+        <div class="controls">
+            <button onclick="changeSlide(-1)">Previous</button>
+            <button onclick="changeSlide(1)">Next</button>
+        </div>
+        <div class="actions">
+            <button class="action-btn">
+                <svg viewBox="0 0 24 24" width="20" height="20"><path d="M19.46 9h-4.46l.75-2.5c.22-.72-.25-1.5-1.04-1.5-.35 0-.67.15-.88.4L8 12.5v7.5h9c.74 0 1.39-.48 1.63-1.18l2.25-6.5c.16-.48.16-.99 0-1.47zM6 12H4v8h2v-8z"/></svg>
+                Like
+            </button>
+            <button class="action-btn">
+                <svg viewBox="0 0 24 24" width="20" height="20"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 12h-2v-2h2v2zm0-4h-2V6h2v4z"/></svg>
+                Comment
+            </button>
+            <button class="action-btn">
+                <svg viewBox="0 0 24 24" width="20" height="20"><path d="M12 6V3l4 4-4 4V8c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5h2c0 3.87-3.13 7-7 7s-7-3.13-7-7 3.13-7 7-7z"/></svg>
+                Repost
+            </button>
+            <button class="action-btn">
+                <svg viewBox="0 0 24 24" width="20" height="20"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+                Send
+            </button>
+        </div>
+    </div>
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel img');
+        function changeSlide(n) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + n + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+    </script>
+</body>
+</html>

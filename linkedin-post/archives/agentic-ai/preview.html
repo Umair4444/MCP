@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Agentic AI Post Preview</title>
+    <style>
+        body { 
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif; 
+            line-height: 1.4; 
+            background-color: #f3f2ef; 
+            margin: 0; 
+            padding: 20px; 
+        }
+        .container { 
+            max-width: 550px; 
+            margin: 0 auto; 
+            background: #ffffff; 
+            border: 1px solid #dcdcdc; 
+            border-radius: 8px; 
+            padding: 20px; 
+        }
+        .post-header { display: flex; align-items: center; margin-bottom: 15px; }
+        .post-header-img { width: 48px; height: 48px; background: #ddd; border-radius: 50%; margin-right: 10px; }
+        .post-body { white-space: pre-wrap; font-size: 14px; color: #333; margin-bottom: 15px; }
+        
+        /* Interactive Carousel Styles */
+        .carousel-container { position: relative; border: 1px solid #dcdcdc; border-radius: 4px; overflow: hidden; background: #000; }
+        .carousel-slide { display: none; width: 100%; }
+        .carousel-slide.active { display: block; }
+        .carousel-slide img { width: 100%; display: block; }
+        .carousel-btn { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.7); border: none; padding: 10px; cursor: pointer; font-size: 18px; border-radius: 50%; z-index: 10; }
+        .btn-prev { left: 10px; }
+        .btn-next { right: 10px; }
+        
+        .footer { font-size: 14px; color: #666; margin-top: 15px; padding-top: 10px; border-top: 1px solid #eee; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="post-header">
+            <div class="post-header-img"></div>
+            <div><strong>Agentic AI</strong><br><small>Tech Strategy & Architecture</small></div>
+        </div>
+        <div class="post-body">
+Agentic AI isn't just a chatbot update. It's an entirely new layer of the enterprise stack. 🚀
+
+We’ve officially moved from Generative AI (writing emails) to Agentic AI (completing complex workflows autonomously). 
+
+If your AI strategy is still just "better prompts," you are already behind.
+
+Here are the 4 shifts defining the new Agentic era:
+
+1. Human-on-the-loop, not in-the-loop: The goal is no longer assistance, it’s full autonomy with oversight. 
+2. Multimodality is the baseline: Vision, audio, and reasoning are now required, not experimental.
+3. Security is the differentiator: Robust guardrails define who scales—and who gets breached.
+4. Orchestration > Prompt Engineering: The value is in the system flow, not the individual prompt.
+
+The winners of 2026 won't be those with the best prompts, but those who build the most resilient, agentic architectures.
+
+What is the biggest bottleneck you're seeing in deploying AI Agents right now? Let's discuss in the comments. 👇
+
+#AgenticAI #GenerativeAI #AIStrategy #EnterpriseTech #FutureOfWork
+        </div>
+        
+        <div class="carousel-container">
+            <div class="carousel-slide active"><img src="slide-1.jpg" alt="Slide 1"></div>
+            <div class="carousel-slide"><img src="slide-2.jpg" alt="Slide 2"></div>
+            <div class="carousel-slide"><img src="slide-3.jpg" alt="Slide 3"></div>
+            <div class="carousel-slide"><img src="slide-4.jpg" alt="Slide 4"></div>
+            <div class="carousel-slide"><img src="slide-5.jpg" alt="Slide 5"></div>
+            
+            <button class="carousel-btn btn-prev" onclick="changeSlide(-1)">❮</button>
+            <button class="carousel-btn btn-next" onclick="changeSlide(1)">❯</button>
+        </div>
+        
+        <div class="footer">
+            Like · Comment · Share
+        </div>
+    </div>
+
+    <script>
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+        
+        function changeSlide(direction) {
+            slides[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + direction + slides.length) % slides.length;
+            slides[currentIndex].classList.add('active');
+        }
+    </script>
+</body>
+</html>
